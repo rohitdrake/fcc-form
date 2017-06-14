@@ -1,0 +1,177 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset browser styles */
+
+/*style for header*/
+@keyframes  logo	{
+	from	{
+		transform: rotate(0) scale(.5);
+		left: 120%;
+	}
+	50%    {
+		transform: rotate(-720deg) scale(.5);
+		left: 0;
+	}
+	to    {
+		transform: rotate(0) scale(1);
+	}
+}
+
+* {
+  box-sizing: border-box;
+}
+.banner_header  {
+  background-color: rgb(5, 140, 30);
+}
+.banner_header  h1  {
+  font-size: 3em;
+  max-width: 61.5625%;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+}
+.banner_header  h1  span  {
+  padding-left: 12.69%;
+}
+.logo  {
+  position: absolute;
+  left: -20%;
+}
+.logo {
+  animation: logo 3s;
+}
+/*end of style for header*/
+
+/*style for panel*/
+.subform  {
+  max-width: 1080px;
+  margin: 10px auto;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgba(10, 204, 46, 0.8);
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+.subform:after  {
+  content: " ";
+  display: table;
+  clear: both;
+}
+form  h2  {
+  max-width: 61.5625%;
+  margin: 0 auto;
+}
+form  h2  span  {
+  padding-left: 12.69%;
+  font-size: 1.2em;
+}
+/*style for panel*/
+
+/*style for form elements*/
+.subform p {
+  padding-bottom: 1%;
+}
+
+.label  {
+  float: left;
+  width: 20em;
+  vertical-align: top;
+  text-align: right;
+  margin-right: 15px;
+  clear: left;
+}
+
+.options  {
+  float: left;
+}
+
+input[type="text"], input[type="number"]  {
+  width: 30%;
+  height: 30px;
+}
+
+input[type="text"], input[type="number"], textarea  {
+  border-radius: 5px;
+  background-color: rgb(5, 140, 30);
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus  {
+  background-color: rgb(255, 255, 255);
+}
+input[type="submit"]  {
+  -moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+  	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+  	box-shadow: 0px 0px 0px 2px #9fb4f2;
+  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+  	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+  	background-color:#7892c2;
+  	-moz-border-radius:10px;
+  	-webkit-border-radius:10px;
+  	border-radius:10px;
+  	border:1px solid #4e6096;
+  	display:inline-block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-family:Arial;
+  	font-size:19px;
+  	padding:12px 37px;
+  	text-decoration:none;
+  	text-shadow:0px 1px 0px #283966
+}
+
+.submit_btn	{
+	float: left;
+	clear: both;
+	margin-left: 36%;
+}
+
+/*style for mobile screen*/
+@media (max-width: 480px)	{
+	.label	{
+		float: none;
+	}
+	.options	{
+		float: none;
+	}
+	.subform	h2	{
+		font-size: 0.4em;
+	}
+	.banner_header	{
+		padding-bottom: 1.4em;
+	}
+	.banner_header	h1	{
+		font-size: 1.5em;
+	}
+}

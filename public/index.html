@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FCC:Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Skeleton/css/normalize.css">
+    <link rel="stylesheet" href="Skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="Skeleton/css/custom.css">
+  </head>
+  <body>
+    <!--container for header -->
+  <div class="header_wrapper">
+    <div class="container">
+      <h1><figure class="logo"><img class="logo_pic" src="logo.png" alt="Logo of FCC"></figure><span>FCC:Survey Form<span></h1>
+    </div>
+  </div>
+  <!--container for form elements --->
+  <div class="container article">
+    <form class="subform" action="http://localhost:3000" method="post">
+    <div class="row">
+      <div class="four columns">
+        <label for="name" class="label">Name:</label>
+      </div>
+      <div class="eight columns">
+        <input type="text" name="name" placeholder="name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <label for="email" class="label">Email:</label>
+      </div>
+      <div class="eight columns">
+        <input type="text" name="email" placeholder="email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <label for="age"    class="label">Age:</label>
+      </div>
+      <div class="eight columns">
+        <input type="number" name="age" placeholder="age">
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <label class="label">Which option best describe your role?</label>
+      </div>
+      <div class="eight columns">
+        <select name="role">
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Other">Other</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <label class="label">How likely you will recommend freecodecamp to a friend?</label>
+      </div>
+      <div class="eight columns">
+        <label><input type="radio" name="skill" value="Definetly"><span class="label-body">Definetly</span></label>
+        <label><input type="radio" name="skill" value="Maybe"><span class="label-body">Maybe</span></label>
+        <label><input type="radio" name="skill" value="Not Sure"><span class="label-body">Not Sure</span></label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <label class="label">What do you like most in FCC?</label>
+      </div>
+      <div class="eight columns">
+        <select name="favourite">
+          <option value="Challenges">Challenges</option>
+          <option value="Community">Community</option>
+          <option value="Project">Project</option>
+          <option value="Open Source">Open Source</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <label class="label">Things that should be improved in future (Check all that apply):</label>
+      </div>
+      <div class="eight columns">
+        <label><input name="tickBox" type="checkbox" value="Front-end Projects"><span class="label-body">Front-end Projects</span></label>
+        <label><input name="tickBox" type="checkbox" value="Back-end Projects"><span class="label-body">Back-end Projects</span></label>
+        <label><input name="tickBox" type="checkbox" value="Data Visulisation"><span class="label-body">Data Visulisation</span></label>
+        <label><input name="tickBox" type="checkbox" value="Challenges"><span class="label-body">Challenges</span></label>
+        <label><input name="tickBox" type="checkbox" value="Open Source Community"><span class="label-body">Open Source Community</span></label>
+        <label><input name="tickBox" type="checkbox" value="Gitter help rooms"><span class="label-body">Gitter help rooms</span></label>
+        <label><input name="tickBox" type="checkbox" value="Videos"><span class="label-body">Videos</span></label>
+        <label><input name="tickBox" type="checkbox" value="City Meetups"><span class="label-body">City Meetups</span></label>
+        <label><input rname="tickBox" type="checkbox" value="Wiki"><span class="label-body">Wiki</span></label>
+        <label><input name="tickBox" type="checkbox" value="Forum"><span class="label-body">Forum</span></label>
+        <label><input name="tickBox" type="checkbox" value="Additional Courses"><span class="label-body">Additional Courses</span></label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <label class="label">Any Comments or Suggestions?</label>
+      </div>
+      <div class="eight columns">
+        <textarea name="suggestion" class="u-full-width" placeholder="Your suggestion goes here …"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input class="button-primary" type="submit" value="Submit">
+    </div>
+  </form>
+  </div>
+  </body>
+</html>
+<!--<div class="row">
+  <div class="four columns">
+
+  </div>
+  <div class="eight columns">
+
+  </div>
+</div>

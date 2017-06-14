@@ -1,0 +1,59 @@
+/*
+Animation for header
+*/
+@keyframes  logo	{
+	from	{
+		transform: rotate(0) scale(.5);
+		left: 120%;
+	}
+	50%    {
+		transform: rotate(-720deg) scale(.5);
+		left: 0;
+	}
+	to    {
+		transform: rotate(0) scale(1);
+	}
+}
+/*
+style for header
+*/
+.header_wrapper {
+  background-color: rgb(5, 140, 30);
+	padding-bottom: 2.5%;
+}
+
+.header_wrapper .container	{
+	position: relative;
+	text-align: center;
+}
+
+.logo           {
+  display: inline-block;
+  height: 6%;
+  width: 6%;
+  position: absolute;
+  left: -5%;
+	top: -20%;
+  animation: logo 3s;
+}
+.logo_pic       {
+  max-width: 100%;
+  height: auto;
+}
+
+.header_wrapper h1	{
+	font-size: 2rem;
+}
+
+/*
+style for larger screen
+*/
+
+@media (min-width: 550px) {
+	.header_wrapper h1	{
+		font-size: 4rem;
+	}
+	.article						{
+		margin-top: 10px;
+	}
+}
